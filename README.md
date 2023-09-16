@@ -1,5 +1,4 @@
 <h1>Python Notes</h1>
-
 <div>
   <ol>
     <li>
