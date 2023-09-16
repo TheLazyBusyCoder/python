@@ -1,0 +1,70 @@
+//////////////////////////
+/// BASIC
+
+
+  class Human:
+    name = ""
+
+    def __init__(self, name):
+      self.name = name
+
+    def getName(self):
+      print("My name is {}".format(self.name))
+
+
+  leo = Human("leo harry")
+  leo.getName()
+
+//////////////////////////
+/// INHERITANCE
+
+  class Human(object):
+    def __init__(self, id):
+      self.id = id
+
+    def getId(self):
+      print("My ID is {}".format(self.id))
+
+
+  class Leo(Human):
+    def __init__(self, name, id):
+      Human.__init__(self, id)
+      self.name = name
+
+    def getId(self):
+      print("My ID is {}".format(self.id))
+
+    def giveData(self):
+      print("Hi my name is {} and my ID is {}".format(self.name, self.id))
+
+
+  human1 = Leo(name="leo harry", id=1)
+  human1.giveData()
+  human1.getId()
+
+//////////////////////////
+/// POLYMORPHISM
+
+  class Bird(object):
+    def intro(self):
+      print("There are many types of birds.")
+
+    def flight(self):
+      print("Most of the birds can fly but some cannot.")
+
+
+  class sparrow(Bird):
+    def flight(self):
+      print("Sparrows can fly.")
+
+
+  class ostrich(Bird):
+    def flight(self):
+      print("Ostriches cannot fly.")
+
+
+  spa = sparrow()
+  ost = ostrich()
+  spa.flight()
+  ost.flight()
+
