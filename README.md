@@ -1,7 +1,7 @@
 # Python Notes
 
 <div>
-  <h1>1. OOP's </h1>
+  <h3>1. OOP's </h3>
   <p>
     <ul>
       <li>Basic</li>
@@ -12,7 +12,7 @@
 <div>
 
 <div>
-  <h1>Lambda function</h1>
+  <h3>2. Lambda function</h3>
   <p>
     <ul>
       <li>About lambda function</li>
