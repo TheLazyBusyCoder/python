@@ -1,7 +1,7 @@
 <h1>Python Notes</h1>
 
 <div>
-  <h3>oops</h3>
+  <h2>oops</h2>
   <p>
     <ul>
       <li>Basic</li>
