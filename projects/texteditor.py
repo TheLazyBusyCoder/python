@@ -4,7 +4,7 @@ import re
 import subprocess
 import os
 
-current_file = 'C:/Users/ASUS/Desktop/ASR/temp.py'
+current_file = None 
 
 def run_file():
     if current_file:
@@ -144,7 +144,7 @@ line_numbers.config(
     selectforeground='black'  # Selection text color
 )
 
-text = tk.Text(app)
+text = tk.Text(app, wrap="none")
 text.pack(fill="both", expand=True)
 
 text.bind("<Configure>", update_line_numbers)
@@ -190,11 +190,5 @@ file_menu.add_command(label="Exit", command=app.quit)
 app.bind('<Key>', on_key_press)
 
 update_line_numbers()
-
-with open('C:/Users/ASUS/Desktop/ASR/temp.py', 'r') as file:
-    text.delete(1.0, tk.END)
-    text.insert(tk.END, file.read())
-    apply_formatting_to_entire_text()
-    app.title(current_file)
 
 app.mainloop()
